@@ -1,38 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Description: Fetching User List and Displaying Data from "https://randomuser.me" API
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project aims to fetch a list of users from the "https://randomuser.me" API and display their data. The Random User Generator API provides randomly generated user information, including names, email addresses, phone numbers, and profile pictures. By utilizing this API, we can retrieve a diverse range of user data and showcase it in an interactive user interface.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The project will include the following features:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. User List Fetching: The application will make a GET request to the Random User Generator API to retrieve a list of randomly generated user data. The API response will be in JSON format, containing user details such as name, email, phone number, and profile picture.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+2. Data Parsing and Display: The fetched JSON response will be parsed and extracted to obtain individual user details. The application will then display the retrieved data in an organized and user-friendly format. Each user's information will be presented as a card, including their profile picture, name, email, and phone number.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+3. Pagination: To manage a large number of users, the application will implement pagination. Users will be displayed in chunks or pages, with navigation controls to switch between pages. This will ensure efficient data presentation and a smoother user experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Responsive Design: The user interface will be designed to be responsive, adapting to different screen sizes and devices. This will enable users to access and view the application seamlessly on desktops, laptops, tablets, and mobile devices.
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+The project will utilize the following technologies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js, Tailwind Css, Typescript, Redux, Moment: To create the user interface and handle client-side interactions.
+- Random User Generator API: To fetch random user data in JSON format.
+- Axios: To make asynchronous HTTP requests to the API and handle the API response.
+- JSON Parsing: To extract and manipulate the data obtained from the API response.
+- Pagination Libraries or Techniques: To implement pagination for the user list.
+- Responsive Design Techniques: To ensure the application is accessible across different devices.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Conclusion
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project will provide an engaging and interactive user experience by fetching user data from the Random User Generator API and displaying it in a visually appealing manner. Users will be able to navigate through the list of users. By implementing responsive design principles, the application will be accessible to a wide range of users on various devices.
